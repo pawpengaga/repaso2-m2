@@ -1,0 +1,68 @@
+/* div {
+  border: 1px solid red;
+  width: fit-content;
+} */
+
+body {
+  border: 1px solid blue;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+#ejemplo{
+  /* Tipo absoluta */
+  font-size: 48px;
+  /* Tipo variable vista en el video */
+  /* font-size: 2vw; */
+  border: 1px solid green;
+  width: 50%;
+}
+
+.p1 {
+  /* Se usa em en vez de rem para que tome el tamaño absoluto de #ejemplo */
+  font-size: 0.5em;
+}
+.p2 {
+  font-size: 0.7em;
+}
+.p3 {
+  font-size: 1.2em;
+}
+
+/* Solo texto */
+#caja{
+  /* border: 1px solid red; */
+  /* 8px: Arriba y abajo. 12px: A los lados */
+  padding: 8px 12px;
+  /* Solo margin arriba y abajo */
+  margin: 10px 0px;
+  /* Redondez del borde */
+  border-radius: 5px;
+  /* Fit content hace la caja mida solo lo que su contenido */
+  width: fit-content;
+  background-color: rgb(252, 17, 107);
+
+  /* Cosas solo para el texto de dentro */
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+/* Las imagenes */
+#otracaja {
+  /* display: flex; */
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 100px;
+  background-color: whitesmoke;
+
+}
+
+img {
+  border: 1px solid purple;
+  height: 100%;
+}
